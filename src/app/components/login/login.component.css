@@ -1,0 +1,41 @@
+
+form {
+    padding: 2% 40%;
+}
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: #33186B;
+}
+
+h3 {
+    text-align: center;
+    color: #7360DF;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #7360DF;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 120px;
+}
+button:hover {
+    background-color: #33186B;
+}
+input.ng-invalid.ng-touched{
+    border: red 2px solid;
+}
+small{
+    color: red;
+}
+
+p{
+    margin: 0 30px;
+}
+a{
+    text-decoration: none;
+}

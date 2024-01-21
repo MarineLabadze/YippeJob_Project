@@ -1,0 +1,26 @@
+<app-navigation></app-navigation>
+<h1>{{'Welcome to YippeeJob'|translate}}</h1>
+<h3>{{'Please, Log In'|translate}}</h3>
+<br>
+<form>
+    <div [formGroup]="login" (ngSubmit)="onSubmit()" class="group">
+        <div class="mb-3">
+            <label for="email" class="form-label">{{'Email'|translate}}:</label>
+            <input type="text" class="form-control" id="email" formControlName="email">
+            <small *ngIf="email()">{{email()}}</small>        </div>
+    
+        <div class="mb-3">
+            <label for="password" class="form-label">{{'Password'|translate}}:</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+            <small *ngIf="password()">{{password()}}</small>
+        </div>
+    </div>
+
+     <button type="button" (click)="loginn()" >{{'Log In'|translate}}</button> 
+         
+     <p>
+        <br>
+        <a href="/registration">If you don't have an account, click here</a>
+    </p>
+
+</form> 

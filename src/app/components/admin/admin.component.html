@@ -1,0 +1,29 @@
+<app-navigation></app-navigation>
+<h1>✨ {{'Welcome, Admin'|translate}}</h1>
+<br>
+<div class="pendings" >
+
+
+<!--requesti cxrilis qvemot!!!-->
+     <button class="btn1" (click)="GoToRequest()">{{'Open Requests'|translate}}</button> 
+</div>
+<br>
+<br>
+<div>
+     <app-current-date></app-current-date>
+     <br>
+     <app-table></app-table>
+     <br>
+<br>
+<h1>✨{{'Things you can change'|translate}}✨</h1>
+<br>
+<div class="div1">
+ <button class="btn" (click)="GoToDeleteJob()">{{'Delete Job'|translate}}</button>
+
+<button class="btn" (click)="GoToDeleteUser()">{{'Delete User'|translate}}</button> 
+
+<button class="btn" (click)="Addjob()">{{'Add New Job'|translate}}</button>
+
+ <button class="btn" (click)="ChangeId()">{{'Change User Role ID'|translate}}</button>
+</div>
+</div>

@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg">
+    <h1>YippeeJob</h1>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">{{'Home'|translate}}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">{{'About Us'|translate}}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">{{'Share'|translate}}</a>
+        </li>
+    </ul> 
+    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+          
+          <select class="form-select" (change)="ChangeLang($event)" name="" id="">
+              <option [selected]="lang==='en'" value="en">English</option>
+              <option [selected]="lang==='fr'" value="fr">French</option>
+              <option [selected]="lang==='ge'" value="ge">ქართული</option>
+              <option [selected]="lang==='ru'" value="ru">Russian</option>
+              <option [selected]="lang==='deu'" value="deu">German</option>
+          </select>
+      </li>
+  </ul>
+
+        
+
+    <button *ngIf="showLogoutButton" (click)="logOut()" class="btn">{{'Logout'|translate}}</button>
+ 
+  

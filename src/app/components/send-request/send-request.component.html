@@ -1,0 +1,16 @@
+<br>
+<div class="div1">
+    <p>{{'Choose Date'|translate}}: </p>
+    <div class="mb-3">
+      <input type="date" class="form-control" id="selectedDate" [(ngModel)]="selectedDate">
+    </div>
+    <div class="div2">
+      <p>{{'Shift'|translate}}: </p>
+      <button class="btn1" (click)="selectedShift = 'Morning'">{{'Morning'|translate}}</button>
+      <button class="btn1" (click)="selectedShift = 'Evening'">{{'Evening'|translate}}</button>
+    </div>
+    <div class="buttons">
+      <button (click)="addSchedule()">{{'Add Schedule'|translate}}</button>
+    </div>
+  </div>
+

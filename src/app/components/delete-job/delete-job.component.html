@@ -1,0 +1,14 @@
+<app-navigation></app-navigation>
+<br>
+<div>
+<h3>{{'Delete Job Position'|translate}}</h3>
+<br>
+  <form (ngSubmit)="deleteJobPosition()">
+    <label for="jobId">{{'Job ID'|translate}}:</label>
+    <input type="number" id="jobId" name="jobId" [(ngModel)]="jobIdToDelete" required>
+    <button type="submit">{{'Delete'|translate}}</button>
+    <br>
+    <br>
+    <button (click)="GoToAdmin()">{{'Go Back'|translate}}</button>
+  </form>
+</div>

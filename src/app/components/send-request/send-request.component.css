@@ -1,0 +1,68 @@
+.div1{
+    text-align: center;
+    color: #7BD3EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    font-size: 25px;
+    margin-right: 20px;
+}
+input{
+    width: 300px;
+}
+
+.btn1{
+    background-color: #fff;
+    color: #7BD3EA;
+    border: solid 1px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.8s ease;
+ }
+ .btn1:hover{
+    background-color:#33186B ;
+    color: #fff ;
+    scale: 1.1;
+ }
+ .btn1:focus{
+    background-color:#33186B ;
+    color: #fff ;
+ }
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    column-gap: 20px;
+}
+
+.buttons button {
+    background-color: #7BD3EA;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #33186B;
+}
+
+.div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+.request .div2 p{
+margin-top: 10px;
+ }
+

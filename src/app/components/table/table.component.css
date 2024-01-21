@@ -1,0 +1,45 @@
+.div1 {
+    margin-top: 20px;
+}
+th {
+    background-color: #FFD1E3;
+    border: 1px solid #FED9ED;
+    padding: 8px;
+    text-align: left;
+}
+td {
+    border: 1px solid #FED9ED;
+    padding: 8px;
+    text-align: left;
+}
+.btn1{ display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #33186B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;}
+
+.table1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.td1{
+    background-color: #BEADFA;
+}
+.cont {
+    background-color: #7360DF;
+    color: white;
+    height: 20px;
+    margin: 3px 0 3px 0;
+  }
+  
+  .cont1 {
+    background-color: #D63484;
+    color: #fff;
+    height: 20px;
+    margin: 3px 0 3px 0;
+  }

@@ -1,0 +1,15 @@
+<app-navigation></app-navigation>
+<br>
+<div>
+<h3>{{'Delete User'|translate}}:</h3>
+<br>
+  <form (ngSubmit)="deleteUser()">
+    
+    <label for="userId">{{'User ID'|translate}}:</label>
+    <input type="number" id="userId" name="userId" [(ngModel)]="UserIdToDelete" required>
+    <button type="submit">{{'Delete'|translate}}</button>
+  </form>
+  <br>
+  <button (click)="GoToadmin()">{{'Go Back'|translate}}</button>
+
+</div>

@@ -1,0 +1,16 @@
+<app-navigation></app-navigation>
+<br>
+<div>
+    <h3>{{'Change User Role ID'|translate}}:</h3>
+    <br>
+    <label for="userId">{{'User ID'|translate}}:</label>
+    <input type="number" [(ngModel)]="userId" name="userId" required />
+  
+    <label for="newRoleId">{{'New Role ID'|translate}}:</label>
+    <input type="number" [(ngModel)]="newRoleId" name="newRoleId" required />
+  
+    <button (click)="changeUserRole()">{{'Change User Role'|translate}}</button>
+    <br>
+    <br>
+    <button (click)="GoToAdmin()">{{'Go Back'|translate}}</button>
+  </div>

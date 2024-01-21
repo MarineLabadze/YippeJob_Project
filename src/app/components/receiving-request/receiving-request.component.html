@@ -1,0 +1,44 @@
+<app-navigation></app-navigation>
+<div class="pending-requests-container">
+  <h2>Pending Requests:</h2>
+  <div class="table-responsive">
+      <table class="custom-table">
+          <thead>
+              <tr>
+                <th>{{'User ID'|translate}}</th>
+                <th>{{'First Name'|translate}}</th>
+                <th>{{'Last Name'|translate}}</th>
+               
+                <th>{{'Job Title'|translate}}</th>
+                <th>{{'Job ID'|translate}}</th>
+                  <th>{{'Start Time'|translate}}</th>
+                  <th>{{'End Time'|translate}}</th>
+        
+                  <th>{{'Approved'|translate}}</th>
+                  <th>{{'Action'|translate}}</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let request of Requests">
+                <td>{{ request.userId }}</td>
+                <td>{{ request.firstName }}</td>
+                <td>{{ request.lastName }}</td>
+
+                <td>{{ request.jobTitle }}</td>
+                <td>{{ request.jobId }}</td>
+
+                  <td>{{ request.startTime | date:'short' }}</td>
+                  <td>{{ request.endTime | date:'short' }}</td>
+            
+                  <td>{{ request.isApproved ? 'Yes' : 'No' }}</td>
+                  <td>
+                      <button *ngIf="!request.isApproved" class="approve-button" (click)="approveRequest(request.id)">{{'Approve'|translate}}</button>
+                      <button class="decline-button" (click)="declineRequest(request.id)">{{'Decline'|translate}}</button> </td>
+              </tr>
+          </tbody></table>
+  </div>
+</div>
+
+<button (click)="GoToAdmin()">{{'Go Back'|translate}}</button>
+
+  

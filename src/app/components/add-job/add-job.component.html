@@ -1,0 +1,13 @@
+<app-navigation></app-navigation>
+<br>
+<div>
+    <h3>{{'Add New Job'|translate}}:</h3>
+    <br>
+    <form (ngSubmit)="addNewJob()">
+      <label for="jobName">{{'Job name'|translate}}:</label>
+      <input type="text" id="jobName" name="jobName" [(ngModel)]="newJobName" required>
+      <button type="submit">{{'Add'|translate}}</button>
+    </form>
+  <br>
+  <button (click)="GoToAdmin()">{{'Go Back'|translate}}</button>
+</div> 

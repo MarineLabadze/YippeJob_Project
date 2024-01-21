@@ -1,0 +1,27 @@
+ <div class="div1">
+    <button (click)="navigateWeek(-7)" class="btn1"> ⤌ {{'Previous Week'|translate}}</button>
+    <button (click)="navigateWeek(7)" class="btn1">{{'Next Week'|translate}} ⤍</button>
+</div>
+<div class="table-wrapper">
+    <table class="table1">
+        <thead>
+            <tr><td class="td1"></td>
+                <td class="td1" *ngFor="let day of days">{{day}}</td></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th></th>
+                <th *ngFor="let date of dates">{{ date }}</th></tr>
+            <tr *ngFor="let job of jobOptions">
+                <td>{{ job.title }}</td>
+                <td *ngFor="let date of dates">
+                    <div *ngFor="let worker of Worker">
+<ng-container  *ngIf="worker.date === date && worker.jobTitle === job.title">
+        <div  class="workersInfo" [ngClass]="{'cont': worker.info.includes('Evening'), 'cont1': worker.info.includes('Morning')}">{{ worker.info }}</div>
+                        </ng-container>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
